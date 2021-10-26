@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="85.0" prefWidth="164.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ConfirmDel">
+    <children>
+        <Label layoutX="18.0" layoutY="14.0" text="Delete this Item/List?">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="True" layoutX="38.0" layoutY="43.0" mnemonicParsing="false" onAction="#ifYes" text="Yes" />
+        <Button fx:id="False" layoutX="93.0" layoutY="43.0" mnemonicParsing="false" onAction="#ifFalse" text="No" />
+    </children>
+</AnchorPane>

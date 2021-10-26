@@ -1,0 +1,75 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+{
+The main application functions
++main()
++start()
+}
+
+class Home
+{
++CreateItemOrList()
++DelItemOrList()
++ViewList()
+}
+
+class DelItemList
+{
+Select item or list
++DelItem()
++DelList()
+}
+
+class NewItemList
+{
+Select item or list
++NewItem()
++NewList()
+}
+
+class ConfirmDel
+{
+Checks if user wants to delete
++True()
++False()
+}
+
+class NewItem
+{
+Adds new Item
+}
+
+class NewList
+{
+Adds new list
+}
+
+class CommandsForList
+{
+Includes all the actions the viewer
++ CreateList()
++ CreateItem()
++ Edit()
++ Delete()
++ ListBox()
++ ItemBox()
++ CompBox()
++ ListTable()
+}
+
+
+
+openjfx.Application <|- App
+App --> Home
+Home --> DelItemList
+DelItemList --> ConfirmDel
+Home --> NewItemList
+NewItemList --> NewList
+Home --> CommandsForList
+NewItemList --> NewItem
+
+
+
+@enduml

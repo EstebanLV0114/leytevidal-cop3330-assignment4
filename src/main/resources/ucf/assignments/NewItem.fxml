@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.EditItem">
+    <children>
+        <TextField layoutX="88.0" layoutY="52.0" prefHeight="31.0" prefWidth="200.0" promptText="New Name" />
+        <TextArea layoutX="88.0" layoutY="136.0" prefHeight="106.0" prefWidth="200.0" promptText="Type Here" />
+        <DatePicker layoutX="88.0" layoutY="94.0" prefHeight="31.0" prefWidth="200.0" promptText="In YYYY-MM-DD Format..." />
+        <ToolBar id="List Name" layoutY="-5.0" prefHeight="40.0" prefWidth="302.0">
+            <items>
+                <Label text="[Name of List]" textAlignment="CENTER" />
+            </items>
+        </ToolBar>
+        <Label layoutX="11.0" layoutY="59.0" text="Item Name:" />
+        <Label layoutX="16.0" layoutY="101.0" text="Due Date:" />
+        <Label layoutX="11.0" layoutY="136.0" text="Description:" />
+        <Button layoutX="129.0" layoutY="253.0" mnemonicParsing="false" text="Done" />
+    </children>
+</AnchorPane>
